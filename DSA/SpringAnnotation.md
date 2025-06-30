@@ -53,3 +53,17 @@
 
 3. **Singleton Behavior**  
    Each `@Bean` method is called only once — Spring returns the **same instance every time** (singleton scope by default).
+
+## 🟨 `@Controller`
+   Controller is a specialized version of @Component desigined specially for handling web request in Spring MVC method using(e.g @requestMapping,@getMapping,etc)
+   It is also handle view resolution(returning html page or template)
+
+
+## 🟨 `@RestController`
+   It is a specialized version of @Controller designed for restful api.
+   It combine the behavior of @Controller and @ResponseBody.
+   You dont't need to each method annotated with @ResponseBody to return data like JSON.
+   Use @RestController when building REST APIs  that return data (JSON,XML,etc) directly instead of view(html pages)
+
+## 🟨 `@Service`
+   It is a specialization of @Component.

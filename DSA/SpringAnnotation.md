@@ -67,3 +67,12 @@
 
 ## 🟨 `@Service`
    It is a specialization of @Component.
+   It's intended to indicate that the class provide some business logic with in the application.
+   Using @Service helps clarify the intent of the class for developers and align with the good practice code for the organization.
+   In short using @Component instead of @Service will work the same but it is more meaningful to use @Service to indicate that the class provide service or         business logic
+
+## 🟨 `@Repository`
+   It is a specialization of @Component intended specially for data access layer(DAO) classes that interact with database.
+   One of the primary role of @Repository is to provide a machanism for translating data related exception into Spring's data hierachy.
+   It reduce complexity of error handling and make code the more readable and maintainable.
+   
